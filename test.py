@@ -1,3 +1,5 @@
 import requests
-r = requests.post('127.0.0.1:8000/signup' ,json={"name":"admin" , "email":"admin@a.com" ,"password":"password"})
+email ="moni@gmail.com"
+password ="aaaa9999"
+r = requests.post('http://127.0.0.1:8000/login' ,json={"email":email ,"password":password})
 print(r.status_code)
